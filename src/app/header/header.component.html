@@ -1,0 +1,67 @@
+<nav class="navbar navbar-expand-sm bg-body-tertiary mx-4">
+  <div class="container-fluid">
+    <div>
+      <form class="d-flex ms-auto" role="search">
+        <!--The search bar uses ms-auto to align it to the right on larger screens-->
+        <!-- d-none Hides the search bar by default on small screens,d-sm-inline d-md-inline and d-lg-inline Makes the search bar visible on small,medium and  larger screens, it is only visible on extra small screen-->
+        <input
+          class="form-control me-2 d-none d-sm-inline d-md-inline d-lg-inline navbar-search-input"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        /><!--the toggleSearch() toggle the second form from visible to invisible on extra small screen-->
+        <button
+          class="btn btn-outline-success"
+          type="button"
+          (click)="toggleSearch()"
+          arial-label="Toggle search input"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+    <div class="main-menu w-100">
+      <a class="navbar-brand" href="#"
+        ><img src="/images/logo.png" class="image-logo" alt="Logo artisan"
+      /></a>
+      <!--the d-sm-none hide the menu text on large and medium screen-->
+      <div class="d-sm-none text-center">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <p class="mb-0 mt-1">Menu</p>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <!--add a div so i can adjust the placement of this items without affecting the menu berger-->
+        <div class="navbar-items">
+          <a class="nav-link active" aria-current="page" href="#"
+            >Fabrication</a
+          >
+          <a class="nav-link" href="#">Alimentation</a>
+          <a class="nav-link" href="#">Services</a>
+          <a class="nav-link" href="#">Bâtiment</a>
+        </div>
+      </div>
+    </div>
+    <!-- Search input visible underneath navbar on small screens -->
+    <div *ngIf="isSearchVisible" class="search-container d-sm-none">
+      <form class="d-flex mt-2">
+        <input
+          class="form-control me-2 second-form"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+      </form>
+    </div>
+  </div>
+</nav>
