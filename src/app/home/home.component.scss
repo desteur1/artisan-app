@@ -1,0 +1,42 @@
+form {
+  display: flex;
+  justify-content: space-around;
+  max-width: 70%;
+  width: 700px;
+  margin: 0 auto;
+  padding: 10px 5px;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: #f1f8fc;
+}
+.main-input-field {
+  border: none;
+  background: #f1f8fc;
+}
+.btn-img {
+  border: none;
+  background: #f1f8fc;
+}
+
+.main-search-icon {
+  width: 25px;
+}
+.main-item-2 {
+  display: flex;
+  justify-content: space-around;
+}
+.card-img-top {
+  width: 50px;
+  margin: 0 auto;
+}
+.section-title {
+  text-align: center;
+}
+.card-text {
+  text-align: center;
+}
+.main-item-3 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
