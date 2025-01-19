@@ -1,0 +1,47 @@
+.navbar {
+  flex-wrap: wrap;
+}
+
+.navbar-brand {
+  flex-grow: 2;
+}
+.navbar > .container-fluid {
+  justify-content: flex-end;
+}
+.image-logo {
+  width: 200px;
+}
+
+.navbar-search-input {
+  transition: all 0.3s ease-in-out;
+}
+
+.main-menu {
+  display: inline-flex;
+  align-items: center;
+}
+.navbar-items {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+/* Position the search bar absolutely on small screens */
+@media (max-width: 576px) {
+  .search-container {
+    width: 100%;
+  }
+  .search-container .mt-2 {
+    width: 100%;
+  }
+  .main-menu {
+    flex-wrap: wrap;
+  }
+  .navbar-items {
+    // flex-direction: column;
+    display: block;
+  }
+  .image-logo {
+    width: 100px;
+  }
+}
