@@ -3,6 +3,7 @@ import { FabricationComponent } from './fabrication/fabrication.component';
 import { HomeComponent } from './home/home.component';
 import { AlimentationComponent } from './alimentation/alimentation.component';
 import { ServiceComponent } from './service/service.component';
+import { BatimentComponent } from './batiment/batiment.component';
 
 export const routes: Routes = [
   {
@@ -12,4 +13,5 @@ export const routes: Routes = [
   { path: 'fabrication', component: FabricationComponent },
   { path: 'alimentation', component: AlimentationComponent },
   { path: 'service', component: ServiceComponent },
+  { path: 'batiment', component: BatimentComponent },
 ];
