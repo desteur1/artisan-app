@@ -21,7 +21,7 @@
       </form>
     </div>
     <div class="main-menu w-100">
-      <a class="navbar-brand" href="#"
+      <a class="navbar-brand" routerLink="/"
         ><img src="/images/logo.png" class="image-logo" alt="Logo artisan"
       /></a>
       <!--the d-sm-none hide the menu text on large and medium screen-->
@@ -42,7 +42,10 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <!--add a div so i can adjust the placement of this items without affecting the menu berger-->
         <div class="navbar-items">
-          <a class="nav-link active" aria-current="page" href="#"
+          <a
+            class="nav-link active"
+            aria-current="page"
+            routerLink="/fabrication"
             >Fabrication</a
           >
           <a class="nav-link" href="#">Alimentation</a>
